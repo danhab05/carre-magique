@@ -1,7 +1,6 @@
 class CarreMagique:
     def __init__(self, carre):
         self.carre = carre
-
         
     def somme_ligne(self, ):
         s = []
@@ -44,19 +43,13 @@ class CarreMagique:
             return False
     def verifAll(self):
         if self.somme_ligne() and self.somme_colonne() and self.somme_diagonale():
-            return True
+            return "Le carré est magique !"
         else:
-            return False
+            return "Le carré n'est pas magique !"
 
 carre = [
     [4,9,2],
     [3,5,7],
     [8,1,6],
 ]
-verif = CarreMagique(carre)
-
-
-if verif.verifAll():
-    print("Le carré est magique !")
-else:
-    print("Le carré n'est pas magique !")
+print(CarreMagique(carre).verifAll())
