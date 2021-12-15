@@ -4,7 +4,7 @@ Un carré est magique si la somme des nombres de chaque rangée, de chaque colon
 Ce script va vous permettre de vérifier si un carré donné est magique.
 
 ## Usage
-Changer le carré present à la fin du script.
+Changer le carré present à la fin du script "main.py".
 ```python
 carre = [
     [8,1,6],
