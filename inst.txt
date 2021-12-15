@@ -1,6 +1,0 @@
-Un carré est magique si la somme des nombres de chaque rangée, de chaque colonne et de chaque diagonale principale sont égales.
-Pour le creer en python nous devrions creer 4 fonctions:
-- somme_ligne_egale qui verifie que la somme des lignes soit egaux
-- somme_colonne_egale qui verifie que la somme des colonnes soit egaux
-- somme_diagonale_egale qui verifie que la somme des diagonales soit egaux
-    
