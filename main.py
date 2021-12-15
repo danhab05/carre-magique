@@ -43,7 +43,7 @@ class CarreMagique:
         else:
             return False
 
-    def verifAll(self):
+    def verif_all(self):
         if self.somme_ligne() and self.somme_colonne() and self.somme_diagonale():
             return "Le carré est magique !"
         else:
@@ -54,4 +54,4 @@ carre = [
     [3,5,7],
     [8,1,6],
 ]
-print(CarreMagique(carre).verifAll())
+print(CarreMagique(carre).verif_all())
