@@ -3,44 +3,46 @@ class CarreMagique:
         self.carre = carre
         
     def somme_ligne(self, ):
-        s = []
+        sum_list = []
         for i in self.carre:
             sum = 0
             for el in i:
                 sum += el
-            s.append(sum)
-        if s.count(s[0]) == 3:
+            sum_list.append(sum)
+        if sum_list.count(sum_list[0]) == 3:
             return True
         else:
             return False
 
     def somme_colonne(self, ):
-        s = []
+        sum_list = []
         for i in range(len(self.carre)):
             sum = 0
             for el in self.carre:
                 sum += el[i]
-            s.append(sum)
+            sum_list.append(sum)
 
-        if s.count(s[0]) == 3:
+        if sum_list.count(sum_list[0]) == 3:
             return True
         else:
             return False
 
     def somme_diagonale(self, ):
-        s = []
+        sum_list = []
         sum1 = 0
         sum2 = 0
         for f, b in zip(range(len(self.carre)), range(len(self.carre)-1,-1,-1)):
             sum1 += self.carre[b][f]
             sum2 += self.carre[f][f]
 
-        s.append(sum1)
-        s.append(sum2)
-        if s.count(s[0]) == 2:
+        sum_list.append(sum1)
+        sum_list.append(sum2)
+        
+        if sum_list.count(sum_list[0]) == 2:
             return True
         else:
             return False
+
     def verifAll(self):
         if self.somme_ligne() and self.somme_colonne() and self.somme_diagonale():
             return "Le carré est magique !"
