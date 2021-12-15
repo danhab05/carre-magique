@@ -16,7 +16,9 @@ print(CarreMagique(carre).verifAll())
 ```
 
 
-Please make sure to update tests as appropriate.
+```python
+python main.py
+```
 
 ## License
 [MIT](https://raw.githubusercontent.com/danhab05/carre-magique/master/LICENSE)
