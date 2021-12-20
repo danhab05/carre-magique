@@ -29,8 +29,7 @@ class CarreMagique:
 
     def somme_diagonale_equal(self):
         sum_list = []
-        sum1 = 0
-        sum2 = 0
+        sum1, sum2 = 0, 0
         for f, b in zip(range(len(self.carre)), range(len(self.carre)-1,-1,-1)):
             sum1 += self.carre[b][f]
             sum2 += self.carre[f][f]
