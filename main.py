@@ -2,7 +2,7 @@ class CarreMagique:
     def __init__(self, carre):
         self.carre = carre
         
-    def somme_ligne(self):
+    def somme_ligne_equal(self):
         sum_list = []
         for i in self.carre:
             sum = 0
@@ -14,7 +14,7 @@ class CarreMagique:
         else:
             return False
 
-    def somme_colonne(self):
+    def somme_colonne_equal(self):
         sum_list = []
         for i in range(len(self.carre)):
             sum = 0
@@ -27,7 +27,7 @@ class CarreMagique:
         else:
             return False
 
-    def somme_diagonale(self):
+    def somme_diagonale_equal(self):
         sum_list = []
         sum1 = 0
         sum2 = 0
